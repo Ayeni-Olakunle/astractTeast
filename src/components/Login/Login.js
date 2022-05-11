@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Login.scss";
 import { Button, Form } from "react-bootstrap";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function Login() {
   const [loginEmail, SetLoginEmail] = useState("");
@@ -57,6 +57,9 @@ function Login() {
                 </Button>
               </Form>
             </div>
+            <p style={{ textAlign: "center" }}>
+              <Link to="/signup">Sign up</Link>
+            </p>
           </div>
         </div>
       </div>
